@@ -4,6 +4,15 @@
 format: jb-book
 root: intro
 parts:
+    - file: summary
+    - file: autolab_overview
+    - file: map
+    - file: autobots
+    - file: duckiehall
+    - file: tmp_watchtower_placement
+    - file: tmp_localization_apriltag_specs
+    - file: localization
+    - file: aido_eval
     - caption: PART_ONE
       maxdepth: 2
       numbered: False
