@@ -4,31 +4,22 @@
 format: jb-book
 root: intro
 parts:
-    - file: summary
-    - file: autolab_overview
-    - file: map
-    - file: autobots
-    - file: duckiehall
-    - file: tmp_watchtower_placement
-    - file: tmp_localization_apriltag_specs
-    - file: localization
-    - file: aido_eval
-    - caption: PART_ONE
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_1/chapter_a/index
-            sections:
-                - file: part_1/chapter_a/section_1
-          - file: part_1/map_editor/index
-    - caption: PART_TWO
-      maxdepth: 2
-      numbered: False
-      chapters:
-          - file: part_2/chapter_b/index
-            sections:
-                - file: part_2/chapter_b/section_1
-          - file: part_2/chapter_c/index
-            sections:
-                - file: part_2/chapter_c/section_1
-                - file: part_2/chapter_c/section_2
+  - caption: Autolab
+    maxdepth: 2
+    numbered: False
+    chapters:
+      - file: summary
+      - file: autolab_overview
+      - file: map
+      - file: map_editor
+      - file: autobots
+      - file: duckiehall
+      - file: tmp_watchtower_placement
+      - file: tmp_localization_apriltag_specs
+      - file: localization
+
+  - caption: AIDO
+    maxdepth: 2
+    numbered: False
+    chapters:
+      - file: aido_eval
