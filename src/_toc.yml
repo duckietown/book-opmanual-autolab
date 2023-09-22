@@ -4,6 +4,12 @@
 format: jb-book
 root: intro
 parts:
+  - caption: Watchtowers
+    maxdepth: 2
+    numbered: False
+    chapters:
+      - file: watchtowers/overview
+  
   - caption: Autolab
     maxdepth: 2
     numbered: False
@@ -13,7 +19,7 @@ parts:
       - file: map
       - file: map_editor
       - file: autobots
-      - file: duckiehall
+      - file: duckietown
       - file: tmp_watchtower_placement
       - file: tmp_localization_apriltag_specs
       - file: localization
