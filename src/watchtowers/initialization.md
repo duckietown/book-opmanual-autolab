@@ -29,11 +29,6 @@ In the Autolab of ETH Zurich, we use the following naming convention:
 
 Please add `--type watchtower` to the flashing procedure.
 
-```{todo}
-Is this still the case?
-```
-
-Please make sure you have set your Duckietown Shell (dts) to version `daffy` using the command `dts set-version --daffy`.
 
 For Raspberry Pi 4, add `--experimental` to the command.
 ````
