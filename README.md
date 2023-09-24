@@ -28,7 +28,7 @@ A simple example is already provided by this template. Adapt it to your needs.
 
 ### Logo in `src/logo.png`
 
-There is a default logo in `src/logo.png`. This is the book's logo, change it with something that 
+There is a default logo in `src/logo.png`. This is the book's logo, change it to something that 
 reflects the scope of your book. Transparent PNGs are recommended.
 
 

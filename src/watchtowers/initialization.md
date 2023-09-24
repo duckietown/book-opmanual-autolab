@@ -1,5 +1,5 @@
 (watchtower-initialization)=
-# Watchtower Initialization
+# Initialization
 
 ```{needget}
 
@@ -17,7 +17,7 @@
 
 ## Flashing the SD card
 
-The image setup procedure for Watchtowers is the same as for Duckiebots.
+The image setup procedure for Watchtowers is the same as for [Duckiebots](book-opmanual-duckiebot:burn-the-sd-card-cli).
 
 In the Autolab of ETH Zurich, we use the following naming convention:
 

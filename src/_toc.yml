@@ -9,6 +9,7 @@ parts:
     numbered: False
     chapters:
       - file: watchtowers/overview
+      - file: watchtowers/initialization
   
   - caption: Autolab
     maxdepth: 2
