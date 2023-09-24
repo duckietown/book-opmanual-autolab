@@ -121,6 +121,15 @@ This should wait 12 seconds for the observations to come in and put everything i
 
 ![image-20201207-232938.png](./_images/localization-operations/image-20201207-232938.png)
 
+## Online localization
+
+To execute localization in realtime (i.e. online) you can run the following command, again from the root of the repository:
+
+
+```bash
+dts devel run -f -X -L single-experiment-online -- --hostname ETHlargeloop
+```
+
 ## Integrate Odometry data (wheel encoders)
 
 In order to integrate encoder data into the localization system, you need an extra container that takes the odometry data from the robot and feeds it into the localization system.
