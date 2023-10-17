@@ -7,7 +7,7 @@ These instructions will show you how to mount the Adafruit TCS34725 sensor on a 
 
 You will need the following components:
 
-```{figure} src/_images/watchtower/light-sensor/sensor_1.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_1.jpg
 :figwidth: 25em
 :name: fig:wt_sensor1
 :align: center
@@ -15,7 +15,7 @@ You will need the following components:
 Pinheaders
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_2.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_2.jpg
 :figwidth: 25em
 :name: fig:wt_sensor2
 :align: center
@@ -23,7 +23,7 @@ Pinheaders
 Jumper Cables
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_3.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_3.jpg
 :figwidth: 25em
 :name: fig:wt_sensor3
 :align: center
@@ -31,7 +31,7 @@ Jumper Cables
 The sensor
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_4.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_4.jpg
 :figwidth: 25em
 :name: fig:wt_sensor4
 :align: center
@@ -39,7 +39,7 @@ The sensor
 Screws
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_5.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_5.jpg
 :figwidth: 25em
 :name: fig:wt_sensor5
 :align: center
@@ -59,7 +59,7 @@ The first thing to do is to solder the pin headers to the actual sensor.
 The easiest way to solder the pin headers is to use a breadboard and cut a few pin headers in order to get a 90-degree angle between the sensor and the pins.
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_6.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_6.jpg
 :name: fig:wt_sensor6
 :width: 25em 
 
@@ -71,7 +71,7 @@ Sensor on breadboard
 
 Slide the pin header through the large hole and fix the sensor in place with the screws.
 
-```{figure} src/_images/watchtower/light-sensor/sensor_7.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_7.jpg
 :figwidth: 25em
 :name: fig:wt_sensor7
 :align: center
@@ -99,7 +99,7 @@ Connections on TCS34725:
 o 1 2 4 3 o 5
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_8.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_8.jpg
 :figwidth: 25em
 :name: fig:wt_sensor8
 :align: center
@@ -107,7 +107,7 @@ o 1 2 4 3 o 5
 Pin header Adafruit TCS34725
 ```
 
-```{figure} src/_images/watchtower/light-sensor/sensor_9.jpg
+```{figure} ../_images/watchtower/light-sensor/sensor_9.jpg
 :figwidth: 25em
 :name: fig:wt_sensor9
 :align: center
