@@ -1,7 +1,8 @@
-# Autobot {#autolab-2-autobots status=draft}
+(autolab-2-autobots)=
+# Autobot
 
 ```{needget}
-* A [Duckiebot](book-opmanual-duckiebot:book) in `DB21M` or `DB19` configuration
+* A [Duckiebot](duckiebot-configurations) in `DB21` or `DB19` configuration
 ---
 * An Autobot ready for the localization system and AIDO evaluations
 ```
@@ -33,13 +34,13 @@ An AprilTag will be mounted on top of the Autobot for localization.
 - Along the ruler lines on edges of the pages, cut out each tag.
 - Apply configuration-wise changes and alignment, fix the tag in place.
 
-### DB21M
+### DB21
 
 ```{figure} ./_images/autobots_db21m.jpg
-:name: fig:db21m
+:name: fig:db21
 :width: 80%
 
-DB21M Autobot
+DB21 Autobot
 ```
 
 As shown, align the top of the tag with the bottom of fan screws, trim the dangling white paper.
@@ -120,6 +121,7 @@ Click `Save and Apply` and refresh the page. The user inputs should appear in th
 ````{admonition} Where do the configs go?
 :class: info
 
+These steps update the configurations stored in `/data/config/autolab/tag_id` and `/data/config/autolab/map_name` files on the Autobot, which are later used. 
 
-The steps update the configurations in `/data/config/autolab/tag_id` and `/data/config/autolab/map_name` files on the Autobot, which are later used. (So it's equivalent to connecting through ssh and changing the files directly on the Autobot.)
+They are equivalent to connecting through ssh and changing the files directly on the Autobot.
 ````

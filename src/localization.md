@@ -10,15 +10,6 @@
 ETH_large_loop
 ```
 
-## Entity Definition
-
-| Entity                                                                                        | Description                                                                                          | Num Required | Configuration   |
-| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- | ------------ | --------------- |
-| Duckies                                                                                       | Rubber ducks, as pedestrians in the city/autolab                                                     | 10           | Color: Yellow   |
-| [Autobots](https://docs.duckietown.org/daffy/opmanual_autolab/out/autolab_autobot_specs.html) | The Duckiebots with top plate and Apriltags. Where the AIDO submissions will be installed and run. | 3            | DB22            |
-| [Watchtowers](https://docs.duckietown.org/daffy/opmanual_autolab/out/watchtower_hardware.html) | Cameras in the autolab that continue to recognize Apriltags (on the ground and Duckiebots).       | 6/7          | WT19B           |
-| Duckietown                                                                                    | The robot that collects the transforms published from all other robots.                             | 1            | DT20            |
-
 ## Operation instructions
 
 In order to operate your autolab you need to set it up according to the following instructions:
@@ -85,20 +76,20 @@ In order to operate your autolab you need to set it up according to the followin
     This guide was written for the map `ETH_large_loop`. Replace it with your map name every time you find it in a command.
     ```
 
-9. Check if you get data by cloning the repo [https://github.com/duckietown/dt-autolab-localization](https://github.com/duckietown/dt-autolab-localization) and running the following command from its root:
+9. Check if you get data by cloning [the autolab localization repo](https://github.com/duckietown/dt-autolab-localization) and running the following command from its root:
 
-      ```bash
-      dts devel build -f
-      dts devel run -L test-tf -- --hostname ETHlargeloop
-      ```
-
-      ```{attention}
-      The separator `--` is not a typo; the hostname is the map name without underscores, so `ETHlargeloop` instead of `ETH_large_loop`. The map name is **case sensitive**.
-      ```
-
-      You should see an output like this:
-
+    ```bash
+    dts devel build -f
+    dts devel run -L test-tf -- --hostname ETHlargeloop
     ```
+
+    ```{attention}
+    The separator `--` is not a typo; the hostname is the map name without underscores, so `ETHlargeloop` instead of `ETH_large_loop`. The map name is **case sensitive**.
+      ```
+
+    You should see an output like this:
+
+    ```bash
     watchtower03/camera_optical_frame tag/326
     watchtower03/camera_optical_frame tag/307
     watchtower03/camera_optical_frame tag/326
@@ -108,9 +99,38 @@ In order to operate your autolab you need to set it up according to the followin
 
     Make sure you get detections from all the watchtowers. Every 10s, the autobots will publish the transform between their footprint and the AprilTag on top of them:
 
+    ```bash
+    watchtower04/camera_optical_frame tag/314
+    autobot01/footprint tag/403
+    watchtower05/camera_optical_frame tag/301
     ```
-    watchtower04/camera_opt
 
+    The Duckietown robot will also publish TF between the map frame and each ground tag (every 10 seconds):
+
+    ```bash
+    watchtower02/camera_optical_frame tag/343
+    world map
+    map tag/301
+    map tag/303
+    map tag/309
+    map tag/310
+    map tag/311
+    map tag/312
+    map tag/314
+    map tag/315
+    map tag/318
+    map tag/317
+    map tag/321
+    map tag/322
+    map tag/307
+    map tag/326
+    map tag/343
+    watchtower05/camera_optical_frame tag/301
+    watchtower05/camera_optical_frame tag/307
+    ```
+
+    Make sure you get **all** these types of observations.
+    
 Another way of looking at this data is by running the following command (from the root of the same repository):
 
 ```bash
@@ -146,7 +166,7 @@ dts stack up -H [HOSTNAME] encoder -d
 
 You can test that the data is correctly received by the localization system by running the `test-tf` application as done above. You should see something like the following, indicating that a transformation between the reference frame `footprint` of the robot at different timestamps is received:
 
-```plaintext
+```
 autobot01/footprint autobot01/footprint
 autobot01/footprint autobot01/footprint
 autobot01/footprint autobot01/footprint

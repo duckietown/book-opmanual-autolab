@@ -57,7 +57,7 @@ Since all Watchtowers might send data at the same time, we recommend you have a 
 The best, and currently used in the ETHZ Autolab, is a switch with 1 Gb/s ports for each watchtower, with 2 ports at 10 Gb/s, that are connected to a central computer (which in turn needs a 10 Gb/s network card).
 
 ```{todo}
-explain the router requirements.
+Motivate the router requirements.
 ```
 
 ### Power management

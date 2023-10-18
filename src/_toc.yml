@@ -10,19 +10,27 @@ parts:
     chapters:
       - file: watchtowers/overview
       - file: watchtowers/initialization
-  
+      - file: watchtowers/assembly
+      - file: watchtowers/light-sensor
+
+  - caption: Demos
+    maxdepth: 2
+    numbered: False
+    chapters:
+      - file: demos/index
+      - file: demos/light-sensor-demo
+
   - caption: Autolab
     maxdepth: 2
     numbered: False
     chapters:
       - file: summary
-      - file: autolab_overview
       - file: map
       - file: map_editor
       - file: autobots
       - file: duckietown
-      - file: tmp_watchtower_placement
-      - file: tmp_localization_apriltag_specs
+      - file: watchtower_placement
+      - file: localization_apriltag_specs
       - file: localization
 
   - caption: AIDO

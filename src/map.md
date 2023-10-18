@@ -4,7 +4,7 @@
 ```{needget}
 - The city layout is fixed and ready.
 ---
-- The city layout is transcribed in duckietown-world, to be used for visualization tools, for localization and much more.
+- The city layout transcribed in `duckietown-world`, to be used for visualization tools, for localization and much more.
 ```
 
 In this section, the user will formalize the Duckietown built to a predefined map format, and integrate the map into the `duckietown/duckietown-world` Github repository. The formalized map is required for subsequent operations, e.g. localization.

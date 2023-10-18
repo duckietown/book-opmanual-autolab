@@ -63,7 +63,7 @@ Be careful not to confuse between `Map name` and `concat_map_name` when initiali
 ```
 
 ```{note}
-The "Tag id" field should be omitted for a Duckietown robot.
+The `Tag id` field should be omitted for a Duckietown robot. (It does not have an Apriltag)
 
 ```
 
