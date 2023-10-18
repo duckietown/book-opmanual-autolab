@@ -17,9 +17,9 @@
 
 ## Flashing the SD card
 
-The image setup procedure for Watchtowers is the same as for [Duckiebots](book-opmanual-duckiebot:burn-the-sd-card-cli).
+The image setup procedure for Watchtowers is the same as for [Duckiebots](book-opmanual-duckiebot:setup-duckiebot-sd-card).
 
-In the Autolab of ETH Zurich, we use the following naming convention:
+In the Autolab of ETH Zurich, we use the following convention:
 
 - Linux username: `mom`
 - Hostname: `watchtowerXX` (where `XX` specifies the number of the Watchtower)
@@ -30,24 +30,21 @@ In the Autolab of ETH Zurich, we use the following naming convention:
 Please add `--type watchtower` to the flashing procedure.
 
 
-For Raspberry Pi 4, add `--experimental` to the command.
+If using a Raspberry Pi 4, add `--experimental` to the command.
 ````
 
 A complete command will look like:
 
 ```bash
-laptop $ dts init_sd_card --hostname watchtower![XX] --linux-username mom --linux-password MomWatches --country ![COUNTRY] --type watchtower --experimental
+dts init_sd_card --hostname watchtower![XX] --linux-username mom --linux-password MomWatches --country ![COUNTRY] --type watchtower --experimental
 ```
 
-Using the above naming conventions, you can flash your SD cards as described in [Duckiebot Initialization](book-opmanual-duckiebot:setup-duckiebot).
-
-
+Using the above naming conventions, you can flash your SD cards as described in [](book-opmanual-duckiebot:burn-sd-card).
 
 ## Calibrating the camera
 
-Using the instructions in [Camera Calibration](book-opmanual-duckiebot:camera-calib), you should perform only the intrinsic calibration for the Watchtowers.
+Using the instructions in [Camera Calibration](book-opmanual-duckiebot:camera-calib), you should perform **only** the intrinsic calibration for the Watchtowers.
 
-```{note}
-Be sure to check the quality of the image. It should be `1296x972` pixels, not `480x640` pixels like on the Autobots. If it is not, this means you didn't flash the Watchtower with the `--type watchtower` argument. To resolve this, reflash it.
-
+```{tip}
+Be sure to check the size of the image. It should be `1296x972` pixels, not `480x640` pixels like on the Autobots. If it is not, this means you didn't flash the Watchtower with the `--type watchtower` argument. To resolve this, reflash it.
 ```

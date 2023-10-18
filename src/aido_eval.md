@@ -28,7 +28,7 @@ dts devel build
 dts devel run -f -X -L REST -- --hostname ETHlargeloop
 ```
 
-The AIDO evaluator, which is the process that talks to the challenge server and gets assigned jobs, can be found in this repository [https://github.com/duckietown/dt-aido-autolab-evaluator](https://github.com/duckietown/dt-aido-autolab-evaluator). The evaluator needs a working directory to store temporary files in. The command below assumes that the directory `/data` exists on your computer. Make sure you create it first, or you might get errors about some files being missing. So:
+The AIDO evaluator, which is the process that talks to the challenge server and gets assigned jobs, can be found in [this repository](https://github.com/duckietown/dt-aido-autolab-evaluator). The evaluator needs a working directory to store temporary files in. The command below assumes that the directory `/data` exists on your computer. Make sure you create it first, or you might get errors about some files being missing. So:
 
 ```bash
 sudo mkdir /data
@@ -40,7 +40,7 @@ You can now run it by executing the following command from the root of its repos
 dts devel run \
   -A aido=5 \
   -A autolab=ETH_large_loop \
-  -A token=<YOUR_TOKEN> \
+  -A token=<YOUR_DT_TOKEN> \
   -A stage \
   -X \
   -- -v /var/run/docker.sock:/var/run/docker.sock \
