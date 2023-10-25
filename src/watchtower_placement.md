@@ -40,8 +40,10 @@ Below is the field of view of watchtowers. Please keep in mind that they cover a
 ```
 
 ```{figure} ./_images/watchtower_placement/wt_view_straight.png
-:name: fig:watchtower_view_straight_line
+:name: watchtower_view_straight_line
 :width: 90%
+
+Watchtower view straight line.
 ```
 
 ## Connection of the watchtowers

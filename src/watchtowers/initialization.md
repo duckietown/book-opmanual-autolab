@@ -21,9 +21,7 @@ The image setup procedure for Watchtowers is the same as for [Duckiebots](book-o
 
 In the Autolab of ETH Zurich, we use the following convention:
 
-- Linux username: `mom`
 - Hostname: `watchtowerXX` (where `XX` specifies the number of the Watchtower)
-- Password: `MomWatches`.
 
 ````{attention}
 
@@ -36,7 +34,7 @@ If using a Raspberry Pi 4, add `--experimental` to the command.
 A complete command will look like:
 
 ```bash
-dts init_sd_card --hostname watchtower![XX] --linux-username mom --linux-password MomWatches --country ![COUNTRY] --type watchtower --experimental
+dts init_sd_card --hostname watchtower![XX] --country ![COUNTRY] --type watchtower --experimental
 ```
 
 Using the above naming conventions, you can flash your SD cards as described in [](book-opmanual-duckiebot:burn-sd-card).

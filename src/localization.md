@@ -14,7 +14,7 @@ ETH_large_loop
 
 In order to operate your autolab you need to set it up according to the following instructions:
 
-1. Install `docker-compose` for the desktop machine: [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+1. Install `docker-compose` for the desktop machine: [instructions](https://docs.docker.com/compose/install/)
 2. Make sure you are on the `ente` version of the shell commands by running:
 
     ```bash
