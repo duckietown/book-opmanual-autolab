@@ -18,7 +18,7 @@ parts:
     numbered: False
     chapters:
       - file: demos/index
-      - file: demos/light-sensor-demo
+      # - file: demos/light-sensor-demo
 
   - caption: Autolab
     maxdepth: 2
