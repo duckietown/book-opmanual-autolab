@@ -1,12 +1,7 @@
 (watchtower-hardware)=
 # Overview
 
-This section teaches you how to prepare your Watchtower system. This includes initialization and hardware assembly. The placement of the Watchtowers in the city and the whole localization system is described in the [Localization System Section](autolab-localization)
-
-(wt-sd-card-init)=
-## SD card initialization
-
-For Watchtowers and traffic lights, we use naming conventions. Have a look at [traffic light naming conventions](dt-ops-tl-prep) or [for information](watchtower-initialization).
+This section teaches you how to prepare your Watchtower system. This includes initialization and hardware assembly. The placement of the Watchtowers in the city is detailed in [](localization-watchtowers-placement) and the whole localization system is described in the [Localization System Section](autolab-2-localization)
 
 ## Hardware
 
@@ -16,6 +11,7 @@ For Watchtowers and traffic lights, we use naming conventions. Have a look at [t
 ---
 height: 15em
 name: fig:WT19-B_introduction
+align: center
 ---
 Assembled Watchtower in WT19-B configuration.
 ```
